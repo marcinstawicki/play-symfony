@@ -1,0 +1,7 @@
+something: 'something'
+translated:
+  name: 'stringText %number%'
+  help: 'this is help %number%'
+  placeholder: 'this is placeholder %number%'
+  title: 'this is title %number%'
+  wrong: 'something wrong'

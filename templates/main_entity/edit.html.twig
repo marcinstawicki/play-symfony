@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit MainEntity{% endblock %}
+
+{% block body %}
+    <h1>Edit MainEntity</h1>
+
+    {{ include('main_entity/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('main_entity_index') }}">back to list</a>
+
+    {{ include('main_entity/_delete_form.html.twig') }}
+{% endblock %}

@@ -1,0 +1,7 @@
+something: 'etwas'
+translated:
+  name: 'stringText %number%'
+  help: 'das ist Hinweis %number%'
+  placeholder: 'das ist Platzhalter %number%'
+  title: 'das ist Titel %number%'
+  wrong: 'etwas ist nicht richtig'

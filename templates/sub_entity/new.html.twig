@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New SubEntity{% endblock %}
+
+{% block body %}
+    <h1>Create new SubEntity</h1>
+
+    {{ include('sub_entity/_form.html.twig') }}
+
+    <a href="{{ path('sub_entity_index') }}">back to list</a>
+{% endblock %}

@@ -1,0 +1,178 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}MainEntity{% endblock %}
+
+{% block body %}
+    <h1>MainEntity</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ main_entity.id }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineStringPhpStringFormText</th>
+                <td>{{ main_entity.doctrineStringPhpStringFormText }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineTextPhpStringFormTextarea</th>
+                <td>{{ main_entity.doctrineTextPhpStringFormTextarea }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineStringPhpStringFormEmail</th>
+                <td>{{ main_entity.doctrineStringPhpStringFormEmail }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineStringPhpStringFormUrl</th>
+                <td>{{ main_entity.doctrineStringPhpStringFormUrl }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineStringPhpStringFormTel</th>
+                <td>{{ main_entity.doctrineStringPhpStringFormTel }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineStringPhpStringFormColor</th>
+                <td>{{ main_entity.doctrineStringPhpStringFormColor }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineStringPhpStringFormPassword</th>
+                <td>{{ main_entity.doctrineStringPhpStringFormPassword }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineStringPhpStringFormSearch</th>
+                <td>{{ main_entity.doctrineStringPhpStringFormSearch }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineSmallintPhpIntegerFormInteger</th>
+                <td>{{ main_entity.doctrineSmallintPhpIntegerFormInteger }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineIntegerPhpIntegerFormInteger</th>
+                <td>{{ main_entity.doctrineIntegerPhpIntegerFormInteger }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineBigintPhpStringFormInteger</th>
+                <td>{{ main_entity.doctrineBigintPhpStringFormInteger }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineDecimalPhpStringFormNumber</th>
+                <td>{{ main_entity.doctrineDecimalPhpStringFormNumber }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineDecimalPhpStringMoney</th>
+                <td>{{ main_entity.doctrineDecimalPhpStringMoney }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineDecimalPhpStringFormPercent</th>
+                <td>{{ main_entity.doctrineDecimalPhpStringFormPercent }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineStringPhpStringFormCountry</th>
+                <td>{{ main_entity.doctrineStringPhpStringFormCountry }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineStringPhpStringFormLanguage</th>
+                <td>{{ main_entity.doctrineStringPhpStringFormLanguage }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineStringPhpStringFormLocale</th>
+                <td>{{ main_entity.doctrineStringPhpStringFormLocale }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineStringPhpStringFormTimezone</th>
+                <td>{{ main_entity.doctrineStringPhpStringFormTimezone }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineStringPhpStringFormCurrency</th>
+                <td>{{ main_entity.doctrineStringPhpStringFormCurrency }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineSmallintPhpIntegerFormChoice</th>
+                <td>{{ main_entity.doctrineSmallintPhpIntegerFormChoice }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineSimpleArrayPhpArrayFormChoice</th>
+                <td>{{ main_entity.doctrineSimpleArrayPhpArrayFormChoice }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineArrayPhpArrayFormChoice</th>
+                <td>{{ main_entity.doctrineArrayPhpArrayFormChoice ? main_entity.doctrineArrayPhpArrayFormChoice|join(', ') : '' }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineJsonPhpArrayFormChoice</th>
+                <td>{{ main_entity.doctrineJsonPhpArrayFormChoice ? main_entity.doctrineJsonPhpArrayFormChoice|json_encode : '' }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineObjectPhpObjectFormChoice</th>
+                <td>{{ main_entity.doctrineObjectPhpObjectFormChoice }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineDatePhpDateTimeFormDate</th>
+                <td>{{ main_entity.doctrineDatePhpDateTimeFormDate ? main_entity.doctrineDatePhpDateTimeFormDate|date('Y-m-d') : '' }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineTimePhpDateTimeFormTime</th>
+                <td>{{ main_entity.doctrineTimePhpDateTimeFormTime ? main_entity.doctrineTimePhpDateTimeFormTime|date('H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineDateTimePhpDateTimeFormDateTime</th>
+                <td>{{ main_entity.doctrineDateTimePhpDateTimeFormDateTime ? main_entity.doctrineDateTimePhpDateTimeFormDateTime|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineDatePhpDateTimeFormBirthday</th>
+                <td>{{ main_entity.doctrineDatePhpDateTimeFormBirthday ? main_entity.doctrineDatePhpDateTimeFormBirthday|date('Y-m-d') : '' }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineDateIntervalPhpDateIntervalFormDateInterval</th>
+                <td>{{ main_entity.DoctrineDateIntervalPhpDateIntervalFormDateInterval ? main_entity.DoctrineDateIntervalPhpDateIntervalFormDateInterval.format('%y year(s), %m month(s), %d day(s)') : '' }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineDateTimeImmutablePhpDateTimeFormDateTime</th>
+                <td>{{ main_entity.doctrineDateTimeImmutablePhpDateTimeFormDateTime ? main_entity.doctrineDateTimeImmutablePhpDateTimeFormDateTime|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineStringPhpStringFormWeek</th>
+                <td>{{ main_entity.doctrineStringPhpStringFormWeek }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineSmallintPhpIntegerFormRange</th>
+                <td>{{ main_entity.doctrineSmallintPhpIntegerFormRange }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineBooleanPhpBooleanFormCheckbox</th>
+                <td>{{ main_entity.doctrineBooleanPhpBooleanFormCheckbox ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineSmallintPhpIntegerFormRadio</th>
+                <td>{{ main_entity.doctrineSmallintPhpIntegerFormRadio }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineStringPhpStringFormFile</th>
+                <td>{{ main_entity.doctrineStringPhpStringFormFile }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineFloatPhpDoubleFormNumber</th>
+                <td>{{ main_entity.doctrineFloatPhpDoubleFormNumber }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineGuidPhpStringFormUuid</th>
+                <td>{{ main_entity.doctrineGuidPhpStringFormUuid }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineBlobPhpResourceFormChoice</th>
+                <td>{{ main_entity.doctrineBlobPhpResourceFormChoice }}</td>
+            </tr>
+            <tr>
+                <th>DoctrineJsonPhpArrayFormCollection</th>
+                <td>{{ main_entity.doctrineJsonPhpArrayFormCollection ? main_entity.doctrineJsonPhpArrayFormCollection|json_encode : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('main_entity_index') }}">back to list</a>
+
+    <a href="{{ path('main_entity_edit', {'id': main_entity.id}) }}">edit</a>
+
+    {{ include('main_entity/_delete_form.html.twig') }}
+{% endblock %}
